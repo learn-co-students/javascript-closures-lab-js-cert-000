@@ -1,12 +1,12 @@
 const app = "I don't do much."
 
-    function bumpCounter(counter) {
+    function bumpCounter() {
+        var counter = 0;
         function addBump() {
-          //var cnt = 0;
-          return counter + 1;
+          counter = counter + 1;
+          return counter;
        }
         function getBumps() {
-          counter = 1;
          return counter;
       }
       return {addBump, getBumps}
