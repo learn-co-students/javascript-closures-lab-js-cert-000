@@ -6,8 +6,8 @@ const app = "I don't do much."
           return counter + 1;
        }
         function getBumps() {
-          var cnt = 0;
-         return cnt = counter;
+          counter = 1;
+         return counter;
       }
       return {addBump, getBumps}
     }
