@@ -1,7 +1,5 @@
 const app = "I don't do much."
 
-//function closures(counter){
-  //function threePointTurn() {
     function bumpCounter(counter) {
         function addBump() {
           //var cnt = 0;
