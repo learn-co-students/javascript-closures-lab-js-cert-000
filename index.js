@@ -14,10 +14,10 @@ const app = "I don't do much."
 
   function createAnimal(animalType) {
     return function(deadlyDevice) {
-      return { animalType: animalType, deadlyDevice: deadlyDevice }
+      return { animalType, deadlyDevice }
     }
 
   }
   var sharkCreator = createAnimal('Shark');
-  var sharkWithFrickinLaserbeam = createAnimal({'Shark': 'Laserbeam'});
-  var sharkWithFrickinCannon = createAnimal({'Shark': 'Cannon'});
+  var sharkWithFrickinLaserbeam = createAnimal({sharkCreator, deadlyDevice:'Laserbeam'});
+  var sharkWithFrickinCannon = createAnimal({sharkCreator, deadlyDevice:'Cannon'});
