@@ -19,5 +19,5 @@ const app = "I don't do much."
 
   }
   var sharkCreator = createAnimal('Shark');
-  var sharkWithFrickinLaserbeam = createAnimal({sharkCreator, deadlyDevice:'Laserbeam'});
-  var sharkWithFrickinCannon = createAnimal({sharkCreator, deadlyDevice:'Cannon'});
+  var sharkWithFrickinLaserbeam = sharkCreator('Laserbeam');
+  var sharkWithFrickinCannon = sharkCreator('Cannon');
